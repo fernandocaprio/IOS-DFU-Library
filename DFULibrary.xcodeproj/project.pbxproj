@@ -481,9 +481,12 @@
 					52C12B5D1C6B8B28004D9DB8 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = P3R8YQEV4L;
+						LastSwiftMigration = 0800;
 					};
 					52C12B671C6B8B28004D9DB8 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -632,6 +635,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "$(VALID_ARCHS)";
@@ -678,6 +682,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "$(VALID_ARCHS)";
@@ -714,6 +719,7 @@
 				SWIFT_INCLUDE_PATHS = "${SRCROOT}/DFULibrary/Zip/minizip ${SRCROOT}/DFULibrary/HexToBinConverter";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				VALID_ARCHS = "$(VALID_ARCHS)";
 			};
 			name = Debug;
@@ -745,6 +751,7 @@
 				SKIP_INSTALL = NO;
 				SWIFT_INCLUDE_PATHS = "${SRCROOT}/DFULibrary/Zip/minizip ${SRCROOT}/DFULibrary/HexToBinConverter";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 2.3;
 				VALID_ARCHS = "$(VALID_ARCHS)";
 			};
 			name = Release;
@@ -752,20 +759,25 @@
 		52C12B761C6B8B28004D9DB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DFULibraryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nordicsemi.DFULibraryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		52C12B771C6B8B28004D9DB8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DFULibraryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nordicsemi.DFULibraryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
